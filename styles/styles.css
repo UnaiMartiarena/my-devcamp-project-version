@@ -1,12 +1,27 @@
-body {
+* {
     margin: 0px;
-    background-color: #333;
-    color: #fff;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-h1 {
-    margin: 0px;
+body {
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
 }
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* h1 {
+    margin: 0px;
+} */
 
 header {
     background-color: #000;
@@ -14,12 +29,22 @@ header {
     height: 64px;
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+    align-items: center;
 }
 
 .logo {
     width: 200px;
-    height: 100%;
+    height: 64px;
+    margin-right: 16px;
+}
+
+/* .logo a {
+    height: 50px;
+} */
+
+.logo svg {
+    stroke: #fff;
+    margin-top: 13px;
 }
 
 .nav-wrapper {
@@ -28,6 +53,19 @@ header {
     flex-direction: column;
 }
 
+.nav-wrapper h3 {
+    text-transform: uppercase;
+    color: gold;
+    font-size: 0.8em;
+    margin-bottom: 3px;
+}
+
 .nav-menu {
     display: flex;
+    margin-bottom: 5px;
+}
+
+.menu-item a {
+    color: #fff;
+    margin-right: 12px;
 }
